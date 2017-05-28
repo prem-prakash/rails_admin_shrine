@@ -1,1 +1,4 @@
 = form.send field.view_helper, field.method_name, field._html_attributes
+
+- if field.cache_method
+  = form.hidden_field(field.cache_method)
